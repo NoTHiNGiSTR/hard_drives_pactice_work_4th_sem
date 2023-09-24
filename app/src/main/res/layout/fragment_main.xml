@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9FC6DD"
+    tools:context=".app.MainFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_center_vertical"
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right_vertical"
+        android:layout_width="2dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="5dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1" />
+
+
+    <TextView
+        android:id="@+id/welcome_title"
+        android:textSize="28dp"
+        android:textColor="@color/black"
+        android:layout_width="6dp"
+        android:layout_height="7dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right_vertical"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/catalogue"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="244dp"
+        android:background="@drawable/hdd"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right_vertical"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="@+id/guideline_center_vertical"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/compare_text"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="сравнение"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right_vertical"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/compare"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/catalogue_text"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="каталог"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right_vertical"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/catalogue" />
+
+    <Button
+        android:id="@+id/newsModels"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_marginTop="244dp"
+        android:background="@drawable/news"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_center_vertical"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toEndOf="@id/guideline_left_vertical"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/compare"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/compare"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right_vertical"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="@+id/guideline_center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/catalogue_text" />
+
+    <TextView
+        android:id="@+id/favourite_text"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="избранное"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right_vertical"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favourites"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/favourites"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/favourite"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_center_vertical"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toEndOf="@id/guideline_left_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/news_text" />
+
+    <TextView
+        android:id="@+id/news_text"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="новинки"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right_vertical"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newsModels" />
+
+    <Button
+        android:id="@+id/auth"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/authorization"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right_vertical"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="@+id/guideline_center_vertical"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/catalogue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/auth" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

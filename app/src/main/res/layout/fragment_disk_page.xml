@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#C5C0C0"
+    tools:context=".app.DiskPageFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9FC6DD"
+        tools:context=".app.DiskPageFragment">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_left_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_center_vertical"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_right_vertical"
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1" />
+
+        <ImageView
+            android:id="@+id/main_image"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/white"
+            android:src="@drawable/prew"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_center_vertical"
+            app:layout_constraintHorizontal_bias="0.694"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/main_info_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Основная информация"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/main_image"
+            tools:layout_editor_absoluteX="141dp" />
+
+        <include
+            android:id="@+id/disk_table"
+            layout="@layout/disk_table"
+            android:layout_width="361dp"
+            android:layout_height="173dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline_left_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/main_info_logo" />
+
+        <TextView
+            android:id="@+id/extra_info_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Дополнительно"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/disk_table"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+        <Button
+            android:id="@+id/to_comp"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:background="@android:drawable/btn_default"
+            android:text="В сравнение"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_right_vertical"
+            app:layout_constraintHorizontal_bias="0.177"
+            app:layout_constraintStart_toStartOf="@+id/guideline_center_vertical"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/to_fav"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@android:drawable/btn_default"
+            android:text="В избранное"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_right_vertical"
+            app:layout_constraintHorizontal_bias="0.177"
+            app:layout_constraintStart_toStartOf="@+id/guideline_center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/to_comp" />
+
+        <TextView
+            android:id="@+id/model_name"
+            android:layout_width="150dp"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="ЖWD Caviar Blue (WD10EZEX)"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.418"
+            app:layout_constraintStart_toStartOf="@+id/guideline_center_vertical"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/extraInfo"
+            android:textColor="@color/black"
+            android:layout_width="361dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline_left_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/extra_info_logo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textColor="@color/black"
+            android:text="Производитель" />
+
+        <TextView
+            android:id="@+id/developer"
+            android:background="@null"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"  />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textColor="@color/black"
+            android:text="Ёмкость" />
+
+        <TextView
+            android:id="@+id/capacity"
+            android:background="@null"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textColor="@color/black"
+            android:text="Назначение" />
+
+        <TextView
+            android:id="@+id/dest"
+            android:background="@null"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textColor="@color/black"
+            android:background="@null"
+            android:text="Форм-фактор" />
+
+        <TextView
+            android:id="@+id/form_factor"
+            android:background="@null"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textColor="@color/black"
+            android:text="Интерфейс" />
+
+        <TextView
+            android:id="@+id/interf"
+            android:background="@null"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textColor="@color/black"
+            android:text="Объём буферной памяти" />
+
+        <TextView
+            android:id="@+id/buf_mem"
+            android:background="@null"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textColor="@color/black"
+            android:text="Скорость вращения шпинделя" />
+
+        <TextView
+            android:id="@+id/shp_speed"
+            android:background="@null"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+</TableLayout>

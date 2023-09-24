@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.myapplication.app.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_catalogueFragment2"
+            app:destination="@id/catalogueFragment2" />
+        <action
+            android:id="@+id/action_mainFragment_to_newModels"
+            app:destination="@id/newModels" />
+        <action
+            android:id="@+id/action_mainFragment_to_compareModelsFragment"
+            app:destination="@id/compareModelsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_favouritesFragment"
+            app:destination="@id/favouritesFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_authorizationFragment"
+            app:destination="@id/authorizationFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_logOutFragment"
+            app:destination="@id/logOutFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentZatichka"
+            app:destination="@id/fragmentZatichka" />
+    </fragment>
+    <fragment
+        android:id="@+id/catalogueFragment2"
+        android:name="com.example.myapplication.app.CatalogueFragment"
+        android:label="fragment_catalogue"
+        tools:layout="@layout/fragment_catalogue" >
+        <action
+            android:id="@+id/action_catalogueFragment2_to_diskPageFragment2"
+            app:destination="@id/diskPageFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/diskPageFragment2"
+        android:name="com.example.myapplication.app.DiskPageFragment"
+        android:label="DiskPageFragment" >
+        <action
+            android:id="@+id/action_diskPageFragment2_to_authorizationFragment"
+            app:destination="@id/authorizationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newModels"
+        android:name="com.example.myapplication.app.NewModelsFragment"
+        android:label="fragment_new_models"
+        tools:layout="@layout/fragment_new_models" >
+        <action
+            android:id="@+id/action_newModels_to_diskPageFragment2"
+            app:destination="@id/diskPageFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/compareModelsFragment"
+        android:name="com.example.myapplication.app.CompareModelsFragment"
+        android:label="fragment_compare_models"
+        tools:layout="@layout/fragment_compare_models" />
+    <fragment
+        android:id="@+id/favouritesFragment"
+        android:name="com.example.myapplication.app.FavouritesFragment"
+        android:label="fragment_favourites"
+        tools:layout="@layout/fragment_favourites" >
+        <action
+            android:id="@+id/action_favouritesFragment_to_diskPageFragment2"
+            app:destination="@id/diskPageFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/authorizationFragment"
+        android:name="com.example.myapplication.authorization.AuthorizationFragment"
+        android:label="fragment_authorization"
+        tools:layout="@layout/fragment_authorization" >
+        <action
+            android:id="@+id/action_authorizationFragment_to_favouritesFragment"
+            app:destination="@id/favouritesFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_authorizationFragment_to_compareModelsFragment"
+            app:destination="@id/compareModelsFragment"
+            app:popUpTo="@id/mainFragment" />
+        <action
+            android:id="@+id/action_authorizationFragment_to_diskPageFragment2"
+            app:destination="@id/diskPageFragment2"
+            app:popUpTo="@id/diskPageFragment2" />
+        <action
+            android:id="@+id/action_authorizationFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment" />
+        <action
+            android:id="@+id/action_authorizationFragment_to_fragmentZatichka"
+            app:destination="@id/fragmentZatichka"
+            app:popUpTo="@id/mainFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/logOutFragment"
+        android:name="com.example.myapplication.app.LogOutFragment"
+        android:label="fragment_log_out"
+        tools:layout="@layout/fragment_log_out" >
+        <action
+            android:id="@+id/action_logOutFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentZatichka"
+        android:name="com.example.myapplication.app.FragmentZatichka"
+        android:label="fragment_zatichka"
+        tools:layout="@layout/fragment_zatichka" />
+</navigation>

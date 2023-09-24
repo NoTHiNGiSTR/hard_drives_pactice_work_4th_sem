@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableRow
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.25"
+            android:padding="3dip"
+            android:textColor="@color/black"
+            android:text="Вид" />
+
+        <ImageView
+            android:id="@+id/model_image1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="3dip" />
+
+        <ImageView
+            android:id="@+id/model_image2"
+            android:layout_weight="1"
+            android:padding="3dip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"  />
+    </TableRow>
+
+    <TableRow
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="44dp"
+            android:padding="3dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:textColor="@color/black"
+            android:text="Название" />
+
+        <TextView
+            android:id="@+id/modelName1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="3dip"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/modelName2"
+            android:background="@null"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"  />
+    </TableRow>
+
+
+    <TableRow
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:padding="3dip"
+            android:layout_weight="0.2"
+            android:textColor="@color/black"
+            android:text="Производитель" />
+
+        <TextView
+            android:id="@+id/developer1"
+            android:background="@null"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"  />
+
+        <TextView
+            android:id="@+id/developer2"
+            android:background="@null"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"  />
+    </TableRow>
+
+    <TableRow
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:padding="3dip"
+            android:layout_weight="0.2"
+            android:text="Ёмкость" />
+
+        <TextView
+            android:id="@+id/capacity1"
+            android:background="@null"
+            android:padding="3dip"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/capacity2"
+            android:background="@null"
+            android:padding="3dip"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableRow>
+
+    <TableRow
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="3dip"
+            android:textColor="@color/black"
+            android:layout_weight="0.2"
+            android:text="Назначение" />
+
+        <TextView
+            android:id="@+id/dest1"
+            android:background="@null"
+            android:padding="3dip"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/dest2"
+            android:background="@null"
+            android:padding="3dip"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableRow>
+
+    <TableRow
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:padding="3dip"
+            android:textColor="@color/black"
+            android:background="@null"
+            android:text="Форм-фактор" />
+
+        <TextView
+            android:id="@+id/form_factor1"
+            android:background="@null"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/form_factor2"
+            android:background="@null"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableRow>
+
+    <TableRow
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:padding="3dip"
+            android:layout_weight="0.2"
+            android:text="Интерфейс" />
+
+        <TextView
+            android:id="@+id/interf1"
+            android:background="@null"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/interf2"
+            android:background="@null"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </TableRow>
+    <TableRow
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dip"
+            android:textColor="@color/black"
+            android:layout_weight="0.2"
+            android:text="Объём\nбуферной\nпамяти" />
+
+        <TextView
+            android:id="@+id/buf_mem1"
+            android:background="@null"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/buf_mem2"
+            android:background="@null"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableRow>
+    <TableRow
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip"
+            android:layout_weight="0.2"
+            android:textColor="@color/black"
+            android:text="Скорость \nвращения \nшпинделя" />
+
+        <TextView
+            android:id="@+id/shp_speed1"
+            android:background="@null"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/shp_speed2"
+            android:background="@null"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableRow>
+
+    <TableRow
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2" />
+
+
+        <Button
+            android:id="@+id/toFav1"
+            android:text="в избранное"
+            android:layout_width="match_parent"
+            android:padding="3dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_default" />
+
+        <Button
+            android:id="@+id/toFav2"
+            android:padding="3dip"
+            android:text="в избранное"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_default" />
+    </TableRow>
+
+</TableLayout>
